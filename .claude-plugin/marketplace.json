@@ -1,0 +1,17 @@
+{
+  "name": "distribution-engineer",
+  "owner": {
+    "name": "Distribution Engineer",
+    "email": "support@distribution.engineer"
+  },
+  "metadata": {
+    "description": "Distribution Engineer for your own AI."
+  },
+  "plugins": [
+    {
+      "name": "distribution-engineer",
+      "source": "./plugin",
+      "description": "Your AI marketing employee, inside your own AI: post on every platform with a tracked link on each piece, rewrite YouTube descriptions, build your offer, and see which post made the money."
+    }
+  ]
+}

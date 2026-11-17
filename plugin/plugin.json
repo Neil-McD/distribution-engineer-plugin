@@ -1,0 +1,32 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "distribution-engineer",
+  "version": "1.1.1",
+  "description": "Your AI marketing employee, inside your own AI: post on every platform with a tracked link on each piece, rewrite YouTube descriptions, build your offer, and see which post made the money.",
+  "extensions": {
+    "com.openai": {
+      "onboardingSkill": "./skills/working-with-distribution-engineer/SKILL.md",
+      "interface": {
+        "displayName": "Distribution Engineer",
+        "shortDescription": "Your AI marketing employee, inside your own AI: post on every platform with a tracked link on each piece, rewrite YouTube descriptions, build your offer, and see which post made the money.",
+        "longDescription": "Your AI marketing employee, inside your own AI. It works in your Distribution Engineer workspace: it posts your videos and posts on every platform with a tracked link on each one, rewrites your YouTube descriptions, puts your funnel link on your videos, builds your offer, form and booking hours, and shows you which post made the money. Every change shows you what will change first, and runs on your yes.",
+        "developerName": "Distribution Engineer",
+        "category": "Productivity",
+        "capabilities": [
+          "Read",
+          "Write"
+        ],
+        "websiteURL": "https://www.distribution.engineer",
+        "privacyPolicyURL": "https://www.distribution.engineer/privacy",
+        "termsOfServiceURL": "https://www.distribution.engineer/terms",
+        "logo": "./icon.svg",
+        "composerIcon": "./icon.svg",
+        "brandColor": "#2447f9",
+        "defaultPrompt": [
+          "Post my new video to YouTube with its own tracked link.",
+          "Rewrite the description of my most-watched video."
+        ]
+      }
+    }
+  }
+}

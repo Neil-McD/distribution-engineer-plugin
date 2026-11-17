@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "distribution-engineer": {
+      "type": "streamable-http",
+      "url": "https://www.distribution.engineer/api/mcp"
+    }
+  }
+}

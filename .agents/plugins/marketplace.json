@@ -1,0 +1,20 @@
+{
+  "name": "distribution-engineer",
+  "interface": {
+    "displayName": "Distribution Engineer"
+  },
+  "plugins": [
+    {
+      "name": "distribution-engineer",
+      "source": {
+        "source": "local",
+        "path": "./plugin"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

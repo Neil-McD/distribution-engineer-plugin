@@ -1,0 +1,24 @@
+{
+  "name": "distribution-engineer",
+  "displayName": "Distribution Engineer",
+  "version": "1.1.1",
+  "description": "Your AI marketing employee, inside your own AI: post on every platform with a tracked link on each piece, rewrite YouTube descriptions, build your offer, and see which post made the money.",
+  "author": {
+    "name": "Distribution Engineer",
+    "url": "https://www.distribution.engineer"
+  },
+  "homepage": "https://www.distribution.engineer",
+  "license": "MIT",
+  "keywords": [
+    "marketing",
+    "social media",
+    "youtube",
+    "attribution",
+    "tracked links"
+  ],
+  "icon": "./icon.svg",
+  "documentationUrl": "https://www.distribution.engineer/your-ai",
+  "supportUrl": "https://www.distribution.engineer/your-ai#support",
+  "privacyPolicyUrl": "https://www.distribution.engineer/privacy",
+  "termsOfServiceUrl": "https://www.distribution.engineer/terms"
+}
