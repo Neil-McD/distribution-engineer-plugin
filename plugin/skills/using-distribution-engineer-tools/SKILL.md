@@ -13,6 +13,10 @@ Some tools come with the Setter and CRIS plans: a tool you aren't offered isn't 
 A tool that changes something outside Distribution Engineer (a post, a video's description, a link, a message, a
 setting) changes nothing on its first call. It returns exactly what would change, and a code.
 
+A few actions change nothing anyone else can see and act on their first call, with no preview: making a new tracked link
+or a profile's bio link (`links` `create` and `bio`), and saving a draft of the form (`offer` `save_form`). Before one of
+those, tell the owner what you are about to make.
+
 1. Show the owner that preview, word for word: its own words, never your summary of it.
 2. Wait for the owner's yes, in this conversation, for exactly that.
 3. Make the same call again with `confirm` set to the code.
