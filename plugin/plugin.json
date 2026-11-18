@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "distribution-engineer",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "Your AI marketing employee, inside your own AI: post on every platform with a tracked link on each piece, rewrite YouTube descriptions, build your offer, and see which post made the money.",
   "extensions": {
     "com.openai": {

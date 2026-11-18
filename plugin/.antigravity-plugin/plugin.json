@@ -1,0 +1,28 @@
+{
+  "$schema": "https://antigravity.google/schemas/v1/plugin.json",
+  "name": "distribution-engineer",
+  "displayName": "Distribution Engineer",
+  "description": "Your AI marketing employee, inside your own AI: post on every platform with a tracked link on each piece, rewrite YouTube descriptions, build your offer, and see which post made the money.",
+  "version": "1.2.0",
+  "logo": "./icon.svg",
+  "homepage": "https://www.distribution.engineer",
+  "repository": "https://github.com/Neil-McD/distribution-engineer-plugin",
+  "license": "MIT",
+  "author": {
+    "name": "Distribution Engineer",
+    "email": "support@distribution.engineer",
+    "url": "https://www.distribution.engineer"
+  },
+  "keywords": [
+    "marketing",
+    "social media",
+    "youtube",
+    "attribution",
+    "tracked links"
+  ],
+  "suggestedPrompts": [
+    "What can you do for me in Distribution Engineer?",
+    "Make me a tracked link for my podcast guest spot.",
+    "Who booked a call with me, and from which post?"
+  ]
+}

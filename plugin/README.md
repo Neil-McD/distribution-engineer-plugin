@@ -9,7 +9,7 @@ builds your offer, form and booking hours, and shows you which post made the mon
 
 - **Claude Code:** `/plugin install distribution-engineer --marketplace Neil-McD/distribution-engineer-plugin`
 - **Codex:** `codex plugin marketplace add Neil-McD/distribution-engineer-plugin`, then pick it under `/plugins`
-- **Claude and ChatGPT:** https://www.distribution.engineer/your-ai
+- **Claude, ChatGPT, Gemini, Grok, Perplexity and others:** https://www.distribution.engineer/your-ai
 
 ## What it connects to
 

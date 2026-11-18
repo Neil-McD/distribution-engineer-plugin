@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "distribution-engineer": {
+      "url": "https://www.distribution.engineer/api/mcp"
+    }
+  }
+}
