@@ -3,7 +3,17 @@
   "mcpServers": {
     "distribution-engineer": {
       "type": "streamable-http",
-      "url": "https://www.distribution.engineer/api/mcp"
+      "url": "https://www.distribution.engineer/api/mcp",
+      "extensions": {
+        "com.openai": {
+          "auth": {
+            "type": "oauth",
+            "client": {
+              "mode": "cimd"
+            }
+          }
+        }
+      }
     }
   }
 }

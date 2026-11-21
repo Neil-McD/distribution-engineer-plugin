@@ -15,7 +15,7 @@ piece of content earned. Work through its tools, never around them.
 2. Who the business is for and how the owner sounds: from what the owner has told you. On the Setter and CRIS plans,
    `/profile/index.md`, `/profile/voice.md` and `/profile/audience.md` hold it too; on Connect there's no business profile.
 3. `/products/index.md`: the one offer the workspace sells. Every piece of content points at it.
-4. `/products/links`: the tracked links that already exist.
+4. `/products/links/index.json`: the tracked links that already exist.
 5. `/audience/funnel.md`: where content sends people, and what doesn't match.
 
 Read `using-distribution-engineer-tools` before using any tool that changes something, and the skill for the job before

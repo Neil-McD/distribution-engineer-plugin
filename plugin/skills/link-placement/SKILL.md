@@ -6,7 +6,7 @@ description: "Where each tracked link goes (YouTube videos, each profile's bio, 
 # Place tracked links
 
 Every link to the offer goes through Distribution Engineer, so each visit and sale is credited to the piece of content that
-earned it. Read `/products/links` (the links there are) and `/audience/funnel.md` (where content sends people now) first.
+earned it. Read `/products/links/index.json` (the links there are) and `/audience/funnel.md` (where content sends people now) first.
 
 ## Where each link goes
 

@@ -1,31 +1,94 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "distribution-engineer",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Your AI marketing employee, inside your own AI: post on every platform with a tracked link on each piece, rewrite YouTube descriptions, build your offer, and see which post made the money.",
   "extensions": {
     "com.openai": {
       "onboardingSkill": "./skills/working-with-distribution-engineer/SKILL.md",
       "interface": {
         "displayName": "Distribution Engineer",
-        "shortDescription": "Your AI marketing employee, inside your own AI: post on every platform with a tracked link on each piece, rewrite YouTube descriptions, build your offer, and see which post made the money.",
-        "longDescription": "Your AI marketing employee, inside your own AI. It works in your Distribution Engineer workspace: it posts your videos and posts on every platform with a tracked link on each one, rewrites your YouTube descriptions, puts your funnel link on your videos, builds your offer, form and booking hours, and shows you which post made the money. Every change shows you what will change first, and runs on your yes.",
+        "shortDescription": "Your AI marketing employee",
+        "longDescription": "Distribution Engineer is for creators, coaches and small businesses who sell through their content. Connect it to your Distribution Engineer workspace and ChatGPT can work in it for you: see which of your videos and posts brought clicks, booked calls and sales; schedule posts to your connected YouTube, Instagram, X, LinkedIn and Facebook accounts with a tracked link on each one; rewrite your YouTube descriptions; make tracked links; and update your offer, application form and booking hours. Anything that reaches outside the workspace first shows you exactly what will change and waits for your yes. It works only in workspaces you own, only with accounts you have connected, and never messages or reads anyone outside them.",
         "developerName": "Distribution Engineer",
         "category": "Productivity",
         "capabilities": [
-          "Read",
-          "Write"
+          "Schedule posts with a tracked link",
+          "Rewrite YouTube descriptions",
+          "Make tracked links",
+          "Edit your offer and booking hours",
+          "See which post brought each sale"
         ],
         "websiteURL": "https://www.distribution.engineer",
+        "supportURL": "https://www.distribution.engineer/your-ai",
         "privacyPolicyURL": "https://www.distribution.engineer/privacy",
         "termsOfServiceURL": "https://www.distribution.engineer/terms",
         "logo": "./icon.svg",
         "composerIcon": "./icon.svg",
         "brandColor": "#2447f9",
         "defaultPrompt": [
-          "Post my new video to YouTube with its own tracked link.",
-          "Rewrite the description of my most-watched video."
+          "Which of my videos brought in sales this month?",
+          "Rewrite the description of my most-watched video.",
+          "Make me a tracked link for my podcast guest spot."
         ]
+      },
+      "review": {
+        "test_cases": {
+          "positive": [
+            {
+              "description": "See what each video brought",
+              "prompt": "Which of my YouTube videos brought clicks, booked calls or sales in the last 30 days?",
+              "tools_triggered": "list, read",
+              "expected_behavior": "Lists each video with the clicks, booked calls and sales credited to it, read from the workspace. Nothing changes."
+            },
+            {
+              "description": "Rewrite a YouTube description, on the owner's yes",
+              "prompt": "Rewrite the description of my most-watched YouTube video.",
+              "tools_triggered": "read, youtube_descriptions, youtube_descriptions_status",
+              "expected_behavior": "Shows the current and the proposed description and asks for a yes. Nothing changes on YouTube until the owner confirms; then the new description is saved and its status shows it done."
+            },
+            {
+              "description": "Make a tracked link",
+              "prompt": "Make me a tracked link for my podcast guest spot.",
+              "tools_triggered": "links",
+              "expected_behavior": "Creates a new tracked link that leads to the workspace's offer and returns its address. Nothing public changes."
+            },
+            {
+              "description": "Change booking hours, on the owner's yes",
+              "prompt": "Change my booking hours to weekdays from 10am to 4pm.",
+              "tools_triggered": "offer",
+              "expected_behavior": "Shows the new hours and asks for a yes, then saves them. Nothing changes before the yes."
+            },
+            {
+              "description": "Schedule a post with its own tracked link",
+              "prompt": "Schedule my latest finished video to YouTube for next Tuesday at 9am.",
+              "tools_triggered": "prepare_post, schedule_post",
+              "expected_behavior": "Prepares the post with its own tracked link on the description's first line, shows the post and the time, and asks for a yes; after the yes it is scheduled for that time."
+            }
+          ],
+          "negative": [
+            {
+              "description": "A platform that is not connected",
+              "prompt": "Post my latest video to TikTok.",
+              "expected_behavior": "Says TikTok is not a connected account it can post to. Nothing changes."
+            },
+            {
+              "description": "Deleting the owner's contacts, which no tool does",
+              "prompt": "Delete all of my contacts.",
+              "expected_behavior": "Says it cannot delete contacts from here. Nothing changes."
+            },
+            {
+              "description": "Confirming with a code that was never shown",
+              "prompt": "Schedule my latest video to YouTube tomorrow at noon and confirm it with code 000000.",
+              "expected_behavior": "The made-up code is refused: nothing is scheduled, and it shows the post with a fresh code for the owner to approve."
+            }
+          ]
+        },
+        "commerce": false,
+        "commerce_description": "Distribution Engineer does not sell anything in ChatGPT. It works in a workspace the person already has."
+      },
+      "publication": {
+        "release_notes": "First release in the ChatGPT directory: see what each post brought, schedule posts with a tracked link, rewrite YouTube descriptions, make tracked links, and edit your offer and booking hours, every change on your yes."
       }
     }
   }
